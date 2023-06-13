@@ -1,0 +1,465 @@
+/* common property UNDER this section */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0%;
+}
+h2{
+    color: white;
+    font-size: 30px;
+}
+.common-hr{
+    width: 100%;
+    margin: 7px auto;
+    height: 3px;
+    background-color: rgb(236, 214, 214);
+    border: none;
+    border-radius: 50px;
+}
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 5px auto;
+    width: 80px;
+}
+p{
+    color: white;
+    font-size: 17px;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* common property AVOBE this section */
+/*Heading Part Start*/
+.heading-part{
+    text-align: center;
+    padding: 1px 7px;
+    margin: 05px 0;
+    background-color: #04AA6D;
+}
+.logo-image{
+    width: 70px;
+    height: 70px;
+}
+.heading-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.heading-menu a{
+    background-color: #166d4d;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 7px 0px;
+    border-radius: 10px;
+}
+.heading-menu a:hover{
+    background-color: gray;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/*for mobile*/
+
+[class*="col-"]{
+    width: 100%;
+}
+.heading-part::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/*Heading Part End*/
+
+/*profile strat here */
+.profile-part{
+    padding: 130px 20px;
+    position: relative;
+    background-image: url(image/weather-background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+.profile-part .top-weather-logo{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    transition: transform 2s;
+}
+.profile-part .top-weather-logo:hover{
+    transform: rotate(360deg);
+}
+.profile-part .bottom-weather-logo{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    transition: transform 2s;
+}
+.profile-part .bottom-weather-logo:hover{
+    transform: rotate(360deg);
+}
+.profile-content p{
+    font-size: 18px;
+    margin: 20px  auto;
+    text-align: center;
+    width: 90%;
+    color: #FFFFFF;
+}
+
+.profile-part::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.profile-part input{
+    transform: translate(20%,50%);
+    padding: 15px;
+    width: 70%;
+    border-radius: 1000px;
+    border: 3px solid #0b8156;
+}
+.fa-solid{
+    position: absolute;
+    color: #04AA6D;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+input:focus{
+    width: 75%;
+    border: 3px solid #0b8156;
+}
+
+.profile-part h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*profile END here */
+/*About me part START here */
+.about-me-part{
+    background-color: #046340c7;
+    padding: 1% 7%;
+    text-align: center;
+}
+.about-me-part::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.about-img img{
+    margin: 30px;
+    width: 200px;
+    height: 220px;
+    border: 3px solid white;
+    border-radius: 100000px;
+}
+.about-desk a:hover{
+    color: #000e09;
+    text-decoration: underline;
+}
+.about-desk{
+    line-height: 30px;
+    position: relative;
+}
+.about-desk .common-hr::before{
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+
+    
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.about-desk .common-hr:hover:before {
+    animation-name: hr;
+}
+
+@keyframes hr{
+    to{
+        width: 100%;
+    }
+}
+
+.about-desk button{
+    background-color: #000a07b4;
+    color: white;
+    justify-content: center;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+
+}
+button:hover{
+    box-shadow: 2px 6px 8px black;
+}
+/*About me part END here */
+
+/* skills part START here */
+.skills-part::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.skills-part{
+    padding: 1% 0%;
+}
+.education-part{
+    text-align: center;
+}
+.skills-part .card{
+    background-color: rgb(68, 66, 66);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    height: 700px;
+}
+.skills-part .card:hover{
+    box-shadow: 2px 4px 8px 5px black;
+}
+.card .card-icon img{
+    text-align: center;
+    width: 90px;
+    border: 5px solid white;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 20px;
+}
+.card-title h2{
+    text-transform: capitalize;
+    background-color: rgb(61, 39, 39);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.card-desk{
+    text-align: left;
+    color: white;
+    padding: 20px;
+    line-height: 18px;
+}
+
+.work-experience-part{
+    text-align: center;
+}
+.progress-bar-part{
+    text-align: center;
+}
+.progress-bar-part .card-desk ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 25px auto;
+    font-size: 18px;
+    font-weight: bolder;
+
+    position: relative;
+}
+.progress-bar-part .card-desk ul li::before{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    content: '';
+    width: 95%;
+    height: 10px;
+    background-color: rgb(238, 224, 224);
+    border-radius: 10000px;
+}
+.progress-bar-part .card-desk ul li::after{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 10px;
+    background-color: rgb(143, 40, 40);
+    border-radius: 10000px;
+    
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;
+    animation-fill-mode: forwards;
+    
+}
+.progress-bar-part li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 80%;
+    }
+}
+.progress-bar-part li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 70%;
+    }
+}
+.progress-bar-part li.java::after{
+    animation-name: java;
+}
+@keyframes java{
+    to{
+        width: 75%;
+    }
+}
+.progress-bar-part li.php::after{
+    animation-name: php;
+}
+@keyframes php{
+    to{
+        width: 50%;
+    }
+}
+
+.progress-bar-part li.bootstrap::after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap{
+    to{
+        width: 70%;
+    }
+}
+.progress-bar-part li.ccv::after{
+    animation-name: ccv;
+}
+@keyframes ccv{
+    to{
+        width: 85%;
+    }
+}
+.progress-bar-part li.paython::after{
+    animation-name: paython;
+}
+@keyframes paython{
+    to{
+        width: 55%;
+    }
+}
+/* skills part END here */
+
+/* Achivement-contact-part START here */
+.Achivement-contact-part::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+.Achivement-contact-part{
+    background-color: #04AA6D;
+    text-align: center;
+    padding: 1% 0;
+}
+#para{
+    text-align: left;
+    padding: 10px;
+    line-height: 25px;
+}
+.contact-part{
+    padding: 20px;
+    text-align: center;
+}
+.contact-part input, textarea{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font: 18px bold;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+    margin-top: 20px;
+}
+.contact-part button{
+    padding: 10px;
+    width: 100px;
+    margin: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #01462e;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+.contact-links{
+    text-align: center;
+}
+.contact-media .btn{
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    font-size: 30px;
+    margin: 20px 10px;
+    padding: 5px;
+    width: 50px;
+    background-color: white;
+    cursor: pointer;
+
+}
+.contact-media .btn:hover{
+    background-color: gray;
+}
+/* Achivement-contact-part END here */
+/* Footer-part START here */
+.footer-part{
+    clear: both;
+    display: table;
+    content: '';
+}
+.footer-part{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+.footer-part a{
+    padding: 10px;
+    display: block;
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #053625;
+}
+.footer-part a:hover{
+    background-color: #8a8383;
+    text-decoration: underline;
+    color: black;
+}
+.footer-desk{
+    text-align: center;
+    padding: 10px;
+    margin: 10 auto;
+}
+/* Footer-part END here */

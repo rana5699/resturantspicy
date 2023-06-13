@@ -1,0 +1,347 @@
+/* Font-family */
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Playfair', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Shrikhand', cursive; */
+/* Font-family */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins','Times New Roman', Times, sans-serif;
+}
+[class*="col-"]{
+    width: 100%;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* Header section START here */
+.heading-section{
+    text-align: center;
+    padding: 10px;
+    background-color: #0d2517;
+}
+.crp-logo{
+    padding: 10px;
+}
+.heading-menu{
+}
+.heading-menu a{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.icon-button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.icon-style{
+    font-size: 50px;
+    color: white;
+}
+.heading-menu a:hover{
+    color: red;
+    border-radius: 10px;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.heading-section::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* Header section START here */
+
+/* Banner-Section START here */
+#banner-section{
+    padding: 1%;
+    background-color: #bec4c4;
+}
+.banner{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+}
+.banner h2{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: rgb(68, 32, 32);
+}
+
+.clear-div::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* Banner-Section END here */
+
+/* content section START here */
+#content-section{
+    padding: 1%;
+    background-color: rgb(226, 218, 218);
+}
+.about-crp p{
+    font-size: 17px;
+    line-height: 33px;
+    padding: 10px;
+}
+.about-crp h3{
+    padding: 10px;
+    font-weight: bolder;
+}
+.about-crp ul li{
+    margin: 10px 35px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.crp-video{
+    width: 100%;
+    height: 350px;
+}
+#content-section::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* content section END here */
+
+/* Contact section START here */
+#contant-section{
+    padding: 1%;
+    background-color: #EEEEEE;
+    margin-top: 10px;
+    color: black;
+}
+.contact-page h4{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 17px;
+}
+.contact-details p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    word-spacing: 8px;
+    margin-bottom: 15px;
+}
+.btn-1{
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #47A447;
+    border: none; 
+    cursor: pointer;
+    
+}
+.btn-2{
+    width: 180px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #3DACCF;
+    border: none; 
+    cursor: pointer;
+    
+}
+.btn-3{
+    width: 180px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #47A447;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(170, 168, 168);
+}
+.crp-map{
+    text-align: center;
+}
+.map{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 2px 4px 6px 4px black;
+}
+.contact-details p a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+#contant-section::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+/* Contact section END here */
+
+/* image section START here */
+#image-gallery{
+    padding: 1%;
+}
+.image-gallery-crp{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.dotted-hr{
+    margin: 20px;
+    margin: 0 auto;
+    width: 200px;
+    height: 5px;
+    border: 8px dotted gray;
+    border-bottom: none;
+}
+.image-tittle h6{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.icon-image{
+    width: 100%;
+    margin: 10px;
+}
+.image-tittle p{
+    word-spacing: 5px;
+    padding: 10px;
+}
+#image-gallery{
+    clear: both;
+    content: '';
+    display: table;
+}
+/* image section END here */
+
+/* Contact-US section START here */
+#contact-us-section{
+    padding: 1%;
+    background-color: rgb(37, 32, 32);
+    color: white;
+}
+.contact-us{
+    padding: 15px;
+}
+h5{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    font-weight: bolder;
+}
+.contact-us p a{
+    color: rgb(231, 223, 223);
+    padding: 10px;
+}
+.icon-style-2{
+    font-size: 25px;
+    margin: 10px;
+}
+span{
+    font-size: 17px;
+    padding: 5px;
+}
+.contact-us .btn{
+    width: 180px;
+    height: 40px;
+    margin: 20px 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(61, 172, 207);
+    border: none; 
+    cursor: pointer;
+}
+#contact-us-section::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+/* Contact-US section END here */
+
+/* about-crp START here */
+.about-crp ul li a{
+    color: rgb(61, 172, 207);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 10px;
+    word-spacing: 3px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* about-crp END here */
+.abou-page{
+    text-align: center;
+}
+.abou-page p{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+#email{
+    width: 100%;
+    font-size: 17px;
+    height: 40px;
+    padding: 15px;
+    margin: 10px auto;
+    border: none;
+    background-color: black;
+}
+#subscribe{
+    padding: 5px 20px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0E6351;
+    color: white;
+    text-transform: uppercase;
+}
+.icon-button{
+    
+}
+.icon-button .btn{
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    font-size: 30px;
+    margin: 20px;
+    padding: 5px;
+    width: 30px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.icon-button .btn:hover{
+    transform: none;
+}

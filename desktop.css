@@ -1,0 +1,154 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*Heading Part Start*/
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* heading part start herer */
+.heading-part{
+    background-color: #15202B;
+    color: #FFFFFF;
+    margin: 0;
+}
+.logo{
+    text-align: left;
+}
+.heading h1{
+    text-align: right;
+}
+.heading-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.heading-menu a{
+    margin: 15px 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+
+
+    position: relative;
+}
+
+.heading-menu a::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #04AA6D;
+
+    
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.heading-menu a:hover{
+    background-color: transparent;
+}
+.heading-menu a:hover:before{
+    animation-name: menu1;
+}
+
+@keyframes menu1{
+    to{
+        width: 100%;
+    }
+}
+
+.heading-part::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/* heading part END herer */
+
+/* profile-part start here */
+.profile-part .top-weather-logo{
+    right: 90px;
+    top: 30px;
+    width: 120px;
+
+    transition: transform 2s;
+}
+
+.profile-part .top-weather-logo:hover{
+    
+    transform: scale(2) rotate(360deg);
+}
+.profile-part .bottom-weather-logo{
+    left: 30px;
+    bottom: 20px;
+    width: 120px;
+
+    transition: transform 2s;
+}
+
+.profile-part .bottom-weather-logo:hover{
+    
+    transform: scale(1.5) rotate(360deg);
+    
+}
+.profile-content p{
+    font-size: 18px;
+    margin: 20px  auto;
+    text-align: center;
+    width: 50%;
+    color: #FFFFFF;
+}
+.fa-solid{
+    margin-top: 40px;
+    margin-left: 130px;
+}
+/* profile-part END here */
+/* About me part START here */
+.about-desk{
+    text-align: left;
+}
+.about-img img{
+    margin-top: 100px;
+    width: 270px;
+    height: 300px;
+}
+.about-desk p{
+    margin: 20px auto;
+}
+/* About me part END here */
+/* Achivement-contact-part START here */
+.contact-links{
+    position: relative;
+}
+.contact-media{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 200px;
+}
+/* Achivement-contact-part END here */
+/* Footer-part START here */
+
+.footer-part{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+.footer-part a{
+    display: inline;
+    background-color: transparent;
+    border-radius: 5px;
+}
+/* Footer-part END here */
