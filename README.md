@@ -1,1 +1,1 @@
-# resturantspicy
+# resturantspicys
