@@ -1,0 +1,76 @@
+ /* For desktop: */
+ .col-l-1 {width: 8.33%;}
+ .col-l-2 {width: 16.66%;}
+ .col-l-3 {width: 25%;}
+ .col-l-4 {width: 33.33%;}
+ .col-l-5 {width: 41.66%;}
+ .col-l-6 {width: 50%;}
+ .col-l-7 {width: 58.33%;}
+ .col-l-8 {width: 66.66%;}
+ .col-l-9 {width: 75%;}
+ .col-l-10 {width: 83.33%;}
+ .col-l-11 {width: 91.66%;}
+ .col-l-12 {width: 100%;}
+
+ header{
+    text-align: left;
+ }
+ nav ul{
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    transition: .4s;
+    position: relative;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + .5px);
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: red;
+
+    
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+nav ul li a:hover:before{
+    animation-name: heading-menu;
+}
+
+@keyframes heading-menu{
+    to{
+        width: 100%;
+    }
+}
+
+nav ul li a:hover{
+    background-color: transparent;
+    border-radius: 0;
+}
+
+#banner-section{
+    position: relative;
+    height: 100vh;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-content h1{
+    width: 700px;
+    padding: 20px;
+}
+.banner-content p{
+    width: 500px;
+    padding: 20px;
+}
